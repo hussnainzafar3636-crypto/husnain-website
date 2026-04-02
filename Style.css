@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    color: #e0e0e0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    position: fixed;
+    width: 100%;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-style: italic;
+    color: #888;
+}
+
+/* CARD */
+.card {
+    border: 1px solid #333;
+    padding: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* THOUGHTS */
+.thought {
+    margin-top: 15px;
+    color: #bbb;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+}
